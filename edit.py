@@ -1,18 +1,14 @@
 import xlsxwriter
 
 # XLSX
-workbook = xlsxwriter.Workbook('Machine3_processes.xlsx')
+workbook = xlsxwriter.Workbook('$FILE_.XLSX')
 worksheet = workbook.add_worksheet()
 
 row = 0
 col = 0
 
 # DATA
-
-
-
-#a_file = open("centos_pstree.txt", "r")
-a_file = open("machine3_pstree.txt", "r")
+a_file = open("$pstree_output.txt", "r")
 
 list_of_lines = a_file.readlines()
 
